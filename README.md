@@ -98,10 +98,10 @@ class Abijith:
 <table>
   <tr>
     <td>
-      <img src="https://github-readme-stats.vercel.app/api?username=Abijith-U0245&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&bg_color=0d1117&title_color=70a5fd&icon_color=bf91f3&text_color=c9d1d9&border_radius=10&rank_icon=github" width="420"/>
+      <img src="https://github-stats-alpha.vercel.app/api?username=Abijith-U0245&cc=0d1117&tc=70a5fd&ic=bf91f3&bc=0d1117" width="420"/>
     </td>
     <td>
-      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Abijith-U0245&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=70a5fd&text_color=c9d1d9&langs_count=8&border_radius=10" width="340"/>
+      <img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=Abijith-U0245&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=70a5fd&text_color=c9d1d9&langs_count=8&border_radius=10" width="340"/>
     </td>
   </tr>
 </table>
@@ -112,7 +112,7 @@ class Abijith:
 ## 🔥 Streak Stats
 
 <div align="center">
-<img src="https://streak-stats.demolab.com?user=Abijith-U0245&theme=tokyonight-duo&hide_border=true&background=0D1117&ring=70A5FD&fire=BF91F3&currStreakLabel=70A5FD&sideLabels=38BDAE&dates=8B949E&currStreakNum=C9D1D9&sideNums=C9D1D9&stroke=0D1117&border_radius=10&card_width=800" width="800"/>
+<img src="https://github-readme-streak-stats-salesp07.vercel.app?user=Abijith-U0245&theme=tokyonight-duo&hide_border=true&background=0D1117&ring=70A5FD&fire=BF91F3&currStreakLabel=70A5FD&sideLabels=38BDAE&dates=8B949E&currStreakNum=C9D1D9&sideNums=C9D1D9&stroke=0D1117&border_radius=10" width="800"/>
 </div>
 
 ---
@@ -120,15 +120,24 @@ class Abijith:
 ## 📈 Activity Graph
 
 <div align="center">
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Abijith-U0245&theme=tokyo-night&bg_color=0d1117&color=70a5fd&line=bf91f3&point=38bdae&area=true&hide_border=true&radius=10" width="100%"/>
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=Abijith-U0245&theme=tokyo-night&bg_color=0d1117&color=70a5fd&line=bf91f3&point=38bdae&area=true&area_color=70a5fd&hide_border=true&radius=10&custom_title=Abijith's%20Contribution%20Graph" width="100%"/>
 </div>
 
 ---
 
-## 🏆 Trophy Wall
+## 🏆 Achievements Showcase
 
 <div align="center">
-<img src="https://github-profile-trophy.vercel.app/?username=Abijith-U0245&theme=tokyonight&no-frame=true&no-bg=true&row=2&column=4&margin-w=8&margin-h=8" width="760"/>
+
+![LeetCode](https://img.shields.io/badge/LeetCode-680%2B%20Problems%20%7C%20Rating%201846-FFA116?style=for-the-badge&logo=leetcode&logoColor=white)
+![Top 7%](https://img.shields.io/badge/LeetCode%20Rank-Top%207%25%20of%20778K%2B-FFA116?style=for-the-badge&logo=leetcode&logoColor=white)
+
+![Guidewire](https://img.shields.io/badge/Guidewire%20DevTrails%202026-Top%2010%20of%205000%2B%20Teams-0057B8?style=for-the-badge&logo=guidewire&logoColor=white)
+![ConceptX](https://img.shields.io/badge/Ideathon%20ConceptX%201.0%202026-Runner%20Up%20🥈-silver?style=for-the-badge)
+
+![UPCycle](https://img.shields.io/badge/UPCycle%202K25-Top%20Finalist%20%7C%20VMRF--DU%20%26%20StartupTN-38BDAE?style=for-the-badge)
+![GDG](https://img.shields.io/badge/GDG%20On%20Campus%20CIT-Secretary%20%7C%20Jan%202026-4285F4?style=for-the-badge&logo=google&logoColor=white)
+
 </div>
 
 ---
@@ -232,7 +241,7 @@ class Abijith:
 
 | Degree | Institution | Year | Score |
 |--------|-------------|------|-------|
-| B.E. Computer Science & Engineering | Chennai Institute of Technology, Chennai | 2024 – 2028 | **CGPA: 9.30 / 10** |
+| B.E. Computer Science & Engineering | Chennai Institute of Technology, Chennai | Sep 2024 – Present | **CGPA: 9.30 / 10** |
 
 </div>
 
