@@ -159,7 +159,7 @@ Enhanced production codebases using the MERN stack to deliver scalable web solut
 
 <table width="100%">
 <tr>
-<td width="33%" valign="top">
+<td width="25%" valign="top">
 
 **GigEase**
 <sub>Parametric insurance AI</sub>
@@ -168,10 +168,10 @@ Auto-detects floods and disruptions for gig delivery workers via live APIs, cred
 
 <sub>`FastAPI` `React` `XGBoost` `Kafka` `LangChain`</sub>
 
-<sub>🏆 **Top 10 / 5,000+ teams** — Guidewire DevTrails 2026</sub>
+<sub> **Top 10 / 5,000+ teams** — Guidewire DevTrails 2026</sub>
 
 </td>
-<td width="33%" valign="top">
+<td width="25%" valign="top">
 
 **ShruthiAI**
 <sub>Offline Hindi voice assistant</sub>
@@ -180,10 +180,10 @@ A fully offline voice assistant running on a Raspberry Pi, built for low-resourc
 
 <sub>`Raspberry Pi` `Python` `Speech Recognition` `Edge AI`</sub>
 
-<sub>🏆 **ARM SoC Finalist**</sub>
+<sub> **ARM SoC Finalist**</sub>
 
 </td>
-<td width="33%" valign="top">
+<td width="25%" valign="top">
 
 **CARES**
 <sub>RAG-based document intelligence</sub>
@@ -193,18 +193,20 @@ Context-aware Q&A over uploaded documents via a custom retrieval-augmented gener
 <sub>`Next.js` `FastAPI` `Python` `RAG`</sub>
 
 </td>
-</tr>
-</table>
 
-<details>
-<summary><b>Smart Attendance System</b> — ESP32 fingerprint IoT</summary>
-<br/>
+<td width="25%" valign="top">
+
+**Smart Attendance System**
+<sub>— ESP32 fingerprint IoT</sub>
 
 Tamper-proof attendance tracking using an ESP32 fingerprint sensor with real-time sync to Google Sheets. Secure admin dashboard built with Node.js and Express for authentication, mode switching, and log management.
 
-`ESP32` `Node.js` `Express` `Apps Script` `Tailwind CSS`
+<sub>`ESP32` `Node.js` `Express` `Apps Script` `Tailwind CSS`</sub>
 
-</details>
+</td>
+
+</tr>
+</table>
 
 <div align="center">
 
