@@ -135,48 +135,7 @@ Edge AI · Full-stack systems · IoT · Applied ML
 <a name="stack"></a>
 <img src="assets/headers/stack.svg" width="100%"/>
 
-<table width="100%">
-<tr>
-<td width="50%" valign="top">
-
-### **Full-Stack**
-- React / Next.js
-- FastAPI / Node.js
-- MongoDB / MySQL
-- Tailwind CSS
-
-</td>
-<td width="50%" valign="top">
-
-### **Edge AI & CV**
-- YOLO11n / ONNX
-- OpenCV / PyTorch
-- Axelera Metis
-- Camera Calibration
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### **IoT Systems**
-- ESP32 / Arduino
-- MQTT / InfluxDB
-- Raspberry Pi
-- Redis Caching
-
-</td>
-<td width="50%" valign="top">
-
-### **Applied ML**
-- XGBoost / Prophet
-- Isolation Forest
-- Scikit-learn
-- LangChain / RAG
-
-</td>
-</tr>
-</table>
+<img src="assets/skill-cards.svg" width="100%"/>
 
 <br/>
 
