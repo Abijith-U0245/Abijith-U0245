@@ -1,59 +1,130 @@
 import os
 
-BASE = "/home/claude/profile-readme/assets"
-os.makedirs(f"{BASE}/headers", exist_ok=True)
+BASE = os.path.dirname(os.path.abspath(__file__))
+NAV_DIR = os.path.join(BASE, "nav")
+HEADERS_DIR = os.path.join(BASE, "headers")
 
+os.makedirs(NAV_DIR, exist_ok=True)
+os.makedirs(HEADERS_DIR, exist_ok=True)
+
+# Color Palette
 NAVY = "#0F172A"
 INDIGO_DARK = "#1E1B4B"
 INDIGO = "#312E81"
 ACCENT = "#4F46E5"
-LILAC = "#A5B4FC"
+ACCENT_LIGHT = "#818CF8"
+LILAC = "#C7D2FE"
 SLATE = "#94A3B8"
-WHITE = "#E2E8F0"
+WHITE = "#F8FAFC"
 
-def header_svg(title, icon_path_d=None):
-    return f'''<svg width="920" height="64" viewBox="0 0 920 64" xmlns="http://www.w3.org/2000/svg">
+# 1. GENERATE NAV PILL SVGS
+nav_items = [
+    ("about", "About", "👤", 115),
+    ("experience", "Experience", "💼", 145),
+    ("now-building", "Now Building", "🚀", 160),
+    ("stack", "Tech Stack", "⚡", 140),
+    ("projects", "Projects", "💻", 130),
+    ("activity", "Activity", "📊", 130),
+    ("achievements", "Achievements", "🏆", 165),
+    ("connect", "Connect", "📬", 125),
+]
+
+def generate_nav_pill(key, label, icon, width):
+    return f'''<svg width="{width}" height="38" viewBox="0 0 {width} 38" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="{INDIGO_DARK}"/>
-      <stop offset="100%" stop-color="{INDIGO}"/>
+    <linearGradient id="bg-{key}" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E1B4B"/>
+      <stop offset="100%" stop-color="#312E81"/>
     </linearGradient>
+    <linearGradient id="border-{key}" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366F1"/>
+      <stop offset="100%" stop-color="#A5B4FC"/>
+    </linearGradient>
+    <filter id="glow-{key}" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
   </defs>
-  <rect width="920" height="64" rx="10" fill="url(#g)"/>
-  <rect x="0" y="0" width="6" height="64" rx="3" fill="{ACCENT}"/>
-  <text x="34" y="41" font-family="JetBrains Mono, Consolas, monospace" font-size="24" font-weight="700" fill="{LILAC}">{title}</text>
+  <rect x="1" y="1" width="{width-2}" height="36" rx="18" fill="url(#bg-{key})" stroke="url(#border-{key})" stroke-width="1.5"/>
+  <circle cx="20" cy="19" r="4" fill="#818CF8"/>
+  <text x="32" y="24" font-family="System-UI, -apple-system, Segoe UI, Roboto, Helvetica, sans-serif" font-size="13" font-weight="600" fill="#F8FAFC">{label}</text>
 </svg>'''
 
-headers = {
-    "about": "01 · About",
-    "experience": "02 · Experience",
-    "now-building": "03 · Now Building",
-    "stack": "04 · Stack",
-    "projects": "05 · Projects",
-    "activity": "06 · GitHub Activity",
-    "achievements": "07 · Achievements",
-    "connect": "08 · Connect",
-}
+for key, label, icon, width in nav_items:
+    with open(os.path.join(NAV_DIR, f"{key}.svg"), "w", encoding="utf-8") as f:
+        f.write(generate_nav_pill(key, label, icon, width))
 
-for key, label in headers.items():
-    with open(f"{BASE}/headers/{key}.svg", "w") as f:
-        f.write(header_svg(label))
+# 2. GENERATE SECTION HEADERS SVGS
+headers_data = [
+    ("about", "01", "About Me"),
+    ("experience", "02", "Work Experience"),
+    ("now-building", "03", "Currently Building"),
+    ("stack", "04", "Tech Stack & Tools"),
+    ("projects", "05", "Featured Projects"),
+    ("activity", "06", "GitHub Activity"),
+    ("achievements", "07", "Achievements & Awards"),
+    ("connect", "08", "Let's Connect"),
+]
 
-# Divider
-divider = f'''<svg width="920" height="3" viewBox="0 0 920 3" xmlns="http://www.w3.org/2000/svg">
+def generate_header_svg(num, title):
+    return f'''<svg width="920" height="68" viewBox="0 0 920 68" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="40%" stop-color="#1E1B4B"/>
+      <stop offset="100%" stop-color="#312E81"/>
+    </linearGradient>
+    <linearGradient id="badge-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4F46E5"/>
+      <stop offset="100%" stop-color="#818CF8"/>
+    </linearGradient>
+    <linearGradient id="line-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366F1"/>
+      <stop offset="50%" stop-color="#A5B4FC" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#0F172A" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Outer Card container -->
+  <rect width="920" height="68" rx="14" fill="url(#bg-grad)" stroke="#3730A3" stroke-width="1.2"/>
+  
+  <!-- Number Badge -->
+  <rect x="16" y="16" width="46" height="36" rx="10" fill="url(#badge-grad)"/>
+  <text x="39" y="40" font-family="JetBrains Mono, monospace" font-size="16" font-weight="800" fill="#FFFFFF" text-anchor="middle">{num}</text>
+  
+  <!-- Title -->
+  <text x="78" y="42" font-family="JetBrains Mono, Segoe UI, sans-serif" font-size="22" font-weight="700" fill="#F8FAFC">{title}</text>
+  
+  <!-- Accent Line -->
+  <rect x="78" y="52" width="780" height="2" rx="1" fill="url(#line-grad)"/>
+  
+  <!-- Right Decorative Tech Grid -->
+  <circle cx="875" cy="34" r="5" fill="#818CF8"/>
+  <circle cx="890" cy="34" r="3" fill="#6366F1" opacity="0.6"/>
+</svg>'''
+
+for key, num, title in headers_data:
+    with open(os.path.join(HEADERS_DIR, f"{key}.svg"), "w", encoding="utf-8") as f:
+        f.write(generate_header_svg(num, title))
+
+# 3. DIVIDER SVG
+divider = f'''<svg width="920" height="4" viewBox="0 0 920 4" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="d" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="{NAVY}" stop-opacity="0"/>
-      <stop offset="50%" stop-color="{ACCENT}"/>
-      <stop offset="100%" stop-color="{NAVY}" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#0F172A" stop-opacity="0"/>
+      <stop offset="25%" stop-color="#4F46E5"/>
+      <stop offset="50%" stop-color="#818CF8"/>
+      <stop offset="75%" stop-color="#4F46E5"/>
+      <stop offset="100%" stop-color="#0F172A" stop-opacity="0"/>
     </linearGradient>
   </defs>
-  <rect width="920" height="3" fill="url(#d)"/>
+  <rect width="920" height="4" rx="2" fill="url(#d)"/>
 </svg>'''
-with open(f"{BASE}/divider.svg", "w") as f:
+
+with open(os.path.join(BASE, "divider.svg"), "w", encoding="utf-8") as f:
     f.write(divider)
 
-# Hero banner (name + role, richer than capsule-render alone)
+# 4. HERO BANNER SVG
 hero = f'''<svg width="920" height="260" viewBox="0 0 920 260" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -81,10 +152,11 @@ hero = f'''<svg width="920" height="260" viewBox="0 0 920 260" xmlns="http://www
   <circle cx="850" cy="60" r="34" fill="none" stroke="{ACCENT}" stroke-width="2" opacity="0.6"/>
   <circle cx="850" cy="60" r="22" fill="none" stroke="{LILAC}" stroke-width="1.5" opacity="0.4"/>
 </svg>'''
-with open(f"{BASE}/hero-banner.svg", "w") as f:
+
+with open(os.path.join(BASE, "hero-banner.svg"), "w", encoding="utf-8") as f:
     f.write(hero)
 
-# Skill radar-style cards (4 category cards row)
+# 5. SKILL CARDS SVG
 def skill_card(x, title, items, level):
     lines = "".join(
         f'<text x="{x+18}" y="{58+18*i}" font-family="JetBrains Mono, monospace" font-size="12" fill="{SLATE}">• {it}</text>'
@@ -111,7 +183,7 @@ body = "".join(skill_card(x, t, it, lv) for x, t, it, lv in cards)
 skill_cards = f'''<svg width="920" height="{max_h}" viewBox="0 0 920 {max_h}" xmlns="http://www.w3.org/2000/svg">
 {body}
 </svg>'''
-with open(f"{BASE}/skill-cards.svg", "w") as f:
+with open(os.path.join(BASE, "skill-cards.svg"), "w", encoding="utf-8") as f:
     f.write(skill_cards)
 
-print("done")
+print("Generated all SVG assets successfully!")

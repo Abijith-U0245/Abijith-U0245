@@ -17,17 +17,15 @@
 <img src="https://komarev.com/ghpvc/?username=Abijith-U0245&label=PROFILE+VIEWS&color=4F46E5&style=for-the-badge" height="28"/>
 <img src="https://img.shields.io/github/followers/Abijith-U0245?label=FOLLOWERS&style=for-the-badge&color=4F46E5&labelColor=1E1B4B" height="28"/>
 
-<br/><br/>
-
-<a href="#about">About</a> ·
-<a href="#experience">Experience</a> ·
-<a href="#now-building">Now Building</a> ·
-<a href="#stack">Stack</a> ·
-<a href="#projects">Projects</a> ·
-<a href="#activity">Activity</a> ·
-<a href="#achievements">Achievements</a> ·
-<a href="#connect">Connect</a>
-
+<div align="center">
+  <a href="#about"><img src="assets/nav/about.svg" alt="About" height="34"/></a>
+  <a href="#experience"><img src="assets/nav/experience.svg" alt="Experience" height="34"/></a>
+  <a href="#now-building"><img src="assets/nav/now-building.svg" alt="Now Building" height="34"/></a>
+  <a href="#stack"><img src="assets/nav/stack.svg" alt="Tech Stack" height="34"/></a>
+  <a href="#projects"><img src="assets/nav/projects.svg" alt="Projects" height="34"/></a>
+  <a href="#activity"><img src="assets/nav/activity.svg" alt="Activity" height="34"/></a>
+  <a href="#achievements"><img src="assets/nav/achievements.svg" alt="Achievements" height="34"/></a>
+  <a href="#connect"><img src="assets/nav/connect.svg" alt="Connect" height="34"/></a>
 </div>
 
 <br/>

@@ -12,8 +12,8 @@
   </defs>
   <rect width="920" height="260" rx="16" fill="url(#bg)"/>
   <rect width="920" height="260" rx="16" fill="url(#glow)"/>
-  <text x="60" y="110" font-family="JetBrains Mono, Consolas, monospace" font-size="52" font-weight="800" fill="#E2E8F0">Abijith U</text>
-  <text x="62" y="145" font-family="JetBrains Mono, Consolas, monospace" font-size="18" fill="#A5B4FC">Edge AI Engineer · Full-Stack Developer · IoT Builder</text>
+  <text x="60" y="110" font-family="JetBrains Mono, Consolas, monospace" font-size="52" font-weight="800" fill="#F8FAFC">Abijith U</text>
+  <text x="62" y="145" font-family="JetBrains Mono, Consolas, monospace" font-size="18" fill="#C7D2FE">Edge AI Engineer · Full-Stack Developer · IoT Builder</text>
   <text x="62" y="180" font-family="JetBrains Mono, Consolas, monospace" font-size="14" fill="#94A3B8">CSE @ Chennai Institute of Technology · Class of 2028</text>
   <g font-family="JetBrains Mono, Consolas, monospace" font-size="13" fill="#94A3B8">
     <text x="62" y="215">Chennai, India</text>
@@ -23,5 +23,5 @@
     <text x="415" y="215">GDG On Campus Secretary, CIT</text>
   </g>
   <circle cx="850" cy="60" r="34" fill="none" stroke="#4F46E5" stroke-width="2" opacity="0.6"/>
-  <circle cx="850" cy="60" r="22" fill="none" stroke="#A5B4FC" stroke-width="1.5" opacity="0.4"/>
+  <circle cx="850" cy="60" r="22" fill="none" stroke="#C7D2FE" stroke-width="1.5" opacity="0.4"/>
 </svg>
