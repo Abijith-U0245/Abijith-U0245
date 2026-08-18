@@ -1,4 +1,6 @@
 import os
+import urllib.request
+import base64
 
 BASE = os.path.dirname(os.path.abspath(__file__))
 NAV_DIR = os.path.join(BASE, "nav")
@@ -16,6 +18,18 @@ ACCENT_LIGHT = "#818CF8"
 LILAC = "#C7D2FE"
 SLATE = "#94A3B8"
 WHITE = "#F8FAFC"
+
+# Download GitHub DP and encode as Base64
+avatar_url = "https://github.com/Abijith-U0245.png"
+avatar_b64 = ""
+try:
+    req = urllib.request.Request(avatar_url, headers={'User-Agent': 'Mozilla/5.0'})
+    with urllib.request.urlopen(req) as resp:
+        img_bytes = resp.read()
+        avatar_b64 = base64.b64encode(img_bytes).decode('utf-8')
+        print(f"Downloaded profile DP ({len(img_bytes)} bytes)")
+except Exception as e:
+    print(f"Failed to fetch profile DP: {e}")
 
 # 1. GENERATE NAV PILL SVGS
 nav_items = [
@@ -50,7 +64,7 @@ for key, label, icon, width in nav_items:
     with open(os.path.join(NAV_DIR, f"{key}.svg"), "w", encoding="utf-8") as f:
         f.write(generate_nav_pill(key, label, icon, width))
 
-# 2. GENERATE SECTION HEADERS SVGS WITH CLEAN TITLES (NO & ENTITY ISSUES)
+# 2. GENERATE SECTION HEADERS SVGS
 headers_data = [
     ("about", "01", "About Me"),
     ("experience", "02", "Work Experience"),
@@ -81,20 +95,11 @@ def generate_header_svg(key, num, title):
     </linearGradient>
   </defs>
   
-  <!-- Outer Card container -->
   <rect width="920" height="68" rx="14" fill="url(#bg-grad-{key})" stroke="#3730A3" stroke-width="1.2"/>
-  
-  <!-- Number Badge -->
   <rect x="16" y="16" width="46" height="36" rx="10" fill="url(#badge-grad-{key})"/>
   <text x="39" y="40" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="800" fill="#FFFFFF" text-anchor="middle">{num}</text>
-  
-  <!-- Title -->
   <text x="78" y="42" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="22" font-weight="700" fill="#F8FAFC">{title}</text>
-  
-  <!-- Accent Line -->
   <rect x="78" y="52" width="780" height="2" rx="1" fill="url(#line-grad-{key})"/>
-  
-  <!-- Right Decorative Tech Grid -->
   <circle cx="875" cy="34" r="5" fill="#818CF8"/>
   <circle cx="890" cy="34" r="3" fill="#6366F1" opacity="0.6"/>
 </svg>'''
@@ -120,33 +125,50 @@ divider = f'''<svg width="920" height="4" viewBox="0 0 920 4" xmlns="http://www.
 with open(os.path.join(BASE, "divider.svg"), "w", encoding="utf-8") as f:
     f.write(divider)
 
-# 4. HERO BANNER SVG
-hero = f'''<svg width="920" height="260" viewBox="0 0 920 260" xmlns="http://www.w3.org/2000/svg">
+# 4. HERO BANNER SVG (WITH GITHUB AVATAR)
+img_tag = f'<image href="data:image/png;base64,{avatar_b64}" x="705" y="55" width="150" height="150" clip-path="url(#avatar-clip)"/>' if avatar_b64 else '<image href="https://github.com/Abijith-U0245.png" x="705" y="55" width="150" height="150" clip-path="url(#avatar-clip)"/>'
+
+hero = f'''<svg width="920" height="260" viewBox="0 0 920 260" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <defs>
     <linearGradient id="bg-hero" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="{NAVY}"/>
       <stop offset="50%" stop-color="{INDIGO_DARK}"/>
       <stop offset="100%" stop-color="{INDIGO}"/>
     </linearGradient>
-    <radialGradient id="glow-hero" cx="80%" cy="20%" r="60%">
-      <stop offset="0%" stop-color="{ACCENT}" stop-opacity="0.35"/>
+    <radialGradient id="glow-hero" cx="75%" cy="30%" r="65%">
+      <stop offset="0%" stop-color="{ACCENT}" stop-opacity="0.4"/>
       <stop offset="100%" stop-color="{ACCENT}" stop-opacity="0"/>
     </radialGradient>
+    <linearGradient id="avatar-border" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="{ACCENT_LIGHT}"/>
+      <stop offset="100%" stop-color="{ACCENT}"/>
+    </linearGradient>
+    <clipPath id="avatar-clip">
+      <circle cx="780" cy="130" r="70"/>
+    </clipPath>
   </defs>
+
   <rect width="920" height="260" rx="16" fill="url(#bg-hero)"/>
   <rect width="920" height="260" rx="16" fill="url(#glow-hero)"/>
-  <text x="60" y="110" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="52" font-weight="800" fill="{WHITE}">Abijith U</text>
-  <text x="62" y="145" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="18" fill="{LILAC}">Edge AI Engineer · Full-Stack Developer · IoT Builder</text>
-  <text x="62" y="180" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="{SLATE}">CSE @ Chennai Institute of Technology · Class of 2028</text>
-  <g font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="{SLATE}">
-    <text x="62" y="215">Chennai, India</text>
-    <text x="220" y="215">·</text>
-    <text x="235" y="215">Available now</text>
-    <text x="400" y="215">·</text>
-    <text x="415" y="215">GDG On Campus Secretary, CIT</text>
+  
+  <text x="50" y="95" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="48" font-weight="800" fill="{WHITE}">Abijith U</text>
+  <text x="52" y="132" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="18" fill="{LILAC}">Edge AI Engineer · Full-Stack Developer · IoT Builder</text>
+  <text x="52" y="168" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="14" fill="{SLATE}">CSE @ Chennai Institute of Technology · Class of 2028</text>
+  
+  <g font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="13" fill="{SLATE}">
+    <text x="52" y="205">Chennai, India</text>
+    <text x="180" y="205">·</text>
+    <text x="195" y="205">Available now</text>
+    <text x="330" y="205">·</text>
+    <text x="345" y="205">GDG On Campus Secretary, CIT</text>
   </g>
-  <circle cx="850" cy="60" r="34" fill="none" stroke="{ACCENT}" stroke-width="2" opacity="0.6"/>
-  <circle cx="850" cy="60" r="22" fill="none" stroke="{LILAC}" stroke-width="1.5" opacity="0.4"/>
+
+  <!-- Glowing Outer Rings -->
+  <circle cx="780" cy="130" r="78" fill="none" stroke="#6366F1" stroke-width="1.5" opacity="0.5"/>
+  <circle cx="780" cy="130" r="73" fill="none" stroke="url(#avatar-border)" stroke-width="4"/>
+  
+  <!-- Avatar Image -->
+  {img_tag}
 </svg>'''
 
 with open(os.path.join(BASE, "hero-banner.svg"), "w", encoding="utf-8") as f:
@@ -182,4 +204,4 @@ skill_cards = f'''<svg width="920" height="{max_h}" viewBox="0 0 920 {max_h}" xm
 with open(os.path.join(BASE, "skill-cards.svg"), "w", encoding="utf-8") as f:
     f.write(skill_cards)
 
-print("Regenerated all SVGs with clean titles!")
+print("Generated hero banner with embedded GitHub avatar!")
