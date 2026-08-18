@@ -252,15 +252,35 @@ A fully offline voice assistant running entirely on Raspberry Pi with zero inter
 <tr><td><b>GDG On Campus CIT</b></td><td>Secretary — planning & running technical workshops and hackathons</td></tr>
 </table>
 
-<details>
-<summary><b>Certifications</b></summary>
 <br/>
 
-- AWS Cloud Practitioner Essentials — AWS Skill Builder
-- MongoDB Skill Certifications — MongoDB
-- CCNA: Introduction to Networks — Cisco
+### **Certifications & Credentials**
 
-</details>
+<table width="100%">
+<tr>
+<td width="33%" valign="top">
+
+<img src="https://img.shields.io/badge/AWS-1E1B4B?style=for-the-badge&logo=amazonaws&logoColor=FF9900" height="30"/><br/><br/>
+**AWS Cloud Practitioner Essentials**  
+<sub>AWS Skill Builder</sub>
+
+</td>
+<td width="33%" valign="top">
+
+<img src="https://img.shields.io/badge/MongoDB-1E1B4B?style=for-the-badge&logo=mongodb&logoColor=47A248" height="30"/><br/><br/>
+**MongoDB Skill Certifications**  
+<sub>MongoDB University</sub>
+
+</td>
+<td width="33%" valign="top">
+
+<img src="https://img.shields.io/badge/Cisco-1E1B4B?style=for-the-badge&logo=cisco&logoColor=1BA0D7" height="30"/><br/><br/>
+**CCNA: Introduction to Networks**  
+<sub>Cisco Networking Academy</sub>
+
+</td>
+</tr>
+</table>
 
 <img src="assets/divider.svg" width="100%"/>
 
