@@ -72,12 +72,12 @@ Edge AI · Full-stack systems · IoT · Applied ML
 <tr>
 <td width="100%">
 
-### 💼 **Edge AI Engineer Intern** &nbsp;·&nbsp; *WG Tech*
-<sub>📅 `Jun 2026 – Present` &nbsp;·&nbsp; 📍 `Chennai, India`</sub>
+### **Edge AI Engineer Intern** &nbsp;·&nbsp; *WG Tech*
+<sub>`Jun 2026 – Present` &nbsp;·&nbsp; `Chennai, India`</sub>
 
-- 🎯 **Computer Vision Quality Inspection**: Developed an industrial CV quality inspection system using **Python**, **OpenCV**, **YOLO11n**, and **ONNX** deployed on **Axelera Metis** hardware.
-- 📐 **Calibration & Model Optimization**: Built precise camera calibration pipelines and trained YOLO11n models achieving **90–95% defect detection accuracy**.
-- 📊 **Real-time Reporting**: Shipped an automated GO/NO-GO inspection dashboard with automated defect reporting.
+- **Computer Vision Quality Inspection**: Developed an industrial CV quality inspection system using **Python**, **OpenCV**, **YOLO11n**, and **ONNX** deployed on **Axelera Metis** hardware.
+- **Calibration & Model Optimization**: Built precise camera calibration pipelines and trained YOLO11n models achieving **90–95% defect detection accuracy**.
+- **Real-time Reporting**: Shipped an automated GO/NO-GO inspection dashboard with automated defect reporting.
 
 <br/>
 
@@ -88,11 +88,11 @@ Edge AI · Full-stack systems · IoT · Applied ML
 <tr>
 <td>
 
-### 🚀 **Product Developer Intern — Freelancer CRM** &nbsp;·&nbsp; *Picabord Technologies Pvt. Ltd.*
-<sub>📅 `Oct 2025 – Nov 2025` &nbsp;·&nbsp; 📍 `Chennai, India`</sub>
+### **Product Developer Intern — Freelancer CRM** &nbsp;·&nbsp; *Picabord Technologies Pvt. Ltd.*
+<sub>`Oct 2025 – Nov 2025` &nbsp;·&nbsp; `Chennai, India`</sub>
 
-- ⚡ **Core CRM Features**: Built end-to-end freelancer management features, shaping product functionality and user workflow.
-- 🐳 **Containerization & API Integration**: Fully **Dockerized** the application for scalable deployment and integrated third-party APIs while eliminating performance bottlenecks.
+- **Core CRM Features**: Built end-to-end freelancer management features, shaping product functionality and user workflow.
+- **Containerization & API Integration**: Fully **Dockerized** the application for scalable deployment and integrated third-party APIs while eliminating performance bottlenecks.
 
 <br/>
 
@@ -103,11 +103,11 @@ Edge AI · Full-stack systems · IoT · Applied ML
 <tr>
 <td>
 
-### 💻 **Full Stack Developer Intern** &nbsp;·&nbsp; *KaizenSpark Tech Pvt. Ltd.*
-<sub>📅 `Jun 2025 – Aug 2025` &nbsp;·&nbsp; 📍 `Chennai, India`</sub>
+### **Full Stack Developer Intern** &nbsp;·&nbsp; *KaizenSpark Tech Pvt. Ltd.*
+<sub>`Jun 2025 – Aug 2025` &nbsp;·&nbsp; `Chennai, India`</sub>
 
-- 🛠️ **Production MERN Solutions**: Enhanced production web codebases using the **MERN stack** to deliver scalable solutions.
-- 🤝 **Agile Collaboration**: Worked within a 4-developer team using **Git** for coordinated feature delivery and bug resolution.
+- **Production MERN Solutions**: Enhanced production web codebases using the **MERN stack** to deliver scalable solutions.
+- **Agile Collaboration**: Worked within a 4-developer team using **Git** for coordinated feature delivery and bug resolution.
 
 <br/>
 
@@ -124,12 +124,10 @@ Edge AI · Full-stack systems · IoT · Applied ML
 
 | Status | Project | What's happening |
 |:---:|---|---|
-| 🟢 | **CV Quality Inspection** (WG Tech) | Tuning YOLO11n models and the GO/NO-GO dashboard on Axelera Metis |
-| 🟢 | **GigEase** | Refining fraud-detection thresholds post-DevTrails, prepping a public demo |
-| 🟡 | **SWASTHA** | Extending anomaly detection and alerting for the water quality dashboard |
-| 🟡 | **ShruthiAI** | Optimizing on-device STT/TTS latency for constrained ARM hardware |
-
-<sub>🟢 actively shipping · 🟡 in progress / maintenance</sub>
+| Active | **CV Quality Inspection** (WG Tech) | Tuning YOLO11n models and the GO/NO-GO dashboard on Axelera Metis |
+| Active | **GigEase** | Refining fraud-detection thresholds post-DevTrails, prepping a public demo |
+| In Progress | **SWASTHA** | Extending anomaly detection and alerting for the water quality dashboard |
+| In Progress | **ShruthiAI** | Optimizing on-device STT/TTS latency for constrained ARM hardware |
 
 <img src="assets/divider.svg" width="100%"/>
 
@@ -182,7 +180,7 @@ Auto-detects floods and disruptions for gig delivery workers via live APIs, cred
 
 <sub>`FastAPI` `React` `XGBoost` `Kafka` `Cassandra` `LangChain`</sub>
 
-<sub>🏆 **Top 10 / 5,000+ teams** — Guidewire DevTrails 2026</sub>
+<sub>**Top 10 / 5,000+ teams** — Guidewire DevTrails 2026</sub>
 
 </td>
 <td width="25%" valign="top">
