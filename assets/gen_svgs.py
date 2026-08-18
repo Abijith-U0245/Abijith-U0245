@@ -175,7 +175,7 @@ hero = f'''<svg width="920" height="260" viewBox="0 0 920 260" xmlns="http://www
 with open(os.path.join(BASE, "hero-banner.svg"), "w", encoding="utf-8") as f:
     f.write(hero)
 
-# 5. STUNNING HIGH-CONTRAST SKILL CARDS SVG
+# 5. STUNNING HIGH-CONTRAST SKILL CARDS SVG (XML-VALIDATED)
 def skill_card_svg(x, title, items, level):
     lines = "".join(
         f'<text x="{x+20}" y="{65+20*i}" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="13" font-weight="500" fill="{SLATE_LIGHT}">• {it}</text>'
@@ -200,7 +200,7 @@ def skill_card_svg(x, title, items, level):
 
 cards_data = [
     (10, "Full-Stack", ["React / Next.js", "FastAPI / Node.js", "MongoDB / MySQL", "Tailwind CSS"], 90),
-    (240, "Edge AI & CV", ["YOLO11n / ONNX", "OpenCV / PyTorch", "Axelera Metis", "Camera Calibration"], 85),
+    (240, "Edge AI + CV", ["YOLO11n / ONNX", "OpenCV / PyTorch", "Axelera Metis", "Camera Calibration"], 85),
     (470, "IoT Systems", ["ESP32 / Arduino", "MQTT / InfluxDB", "Raspberry Pi", "Redis Caching"], 88),
     (700, "Applied ML", ["XGBoost / Prophet", "Isolation Forest", "Scikit-learn", "LangChain / RAG"], 92),
 ]
@@ -228,4 +228,4 @@ skill_cards = f'''<svg width="920" height="175" viewBox="0 0 920 175" xmlns="htt
 with open(os.path.join(BASE, "skill-cards.svg"), "w", encoding="utf-8") as f:
     f.write(skill_cards)
 
-print("Generated stunning high-contrast skill-cards.svg!")
+print("Regenerated XML-safe skill-cards.svg!")
