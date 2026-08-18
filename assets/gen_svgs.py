@@ -50,21 +50,19 @@ for key, label, icon, width in nav_items:
     with open(os.path.join(NAV_DIR, f"{key}.svg"), "w", encoding="utf-8") as f:
         f.write(generate_nav_pill(key, label, icon, width))
 
-# 2. GENERATE SECTION HEADERS SVGS WITH UNIQUE IDS
+# 2. GENERATE SECTION HEADERS SVGS WITH CLEAN TITLES (NO & ENTITY ISSUES)
 headers_data = [
     ("about", "01", "About Me"),
     ("experience", "02", "Work Experience"),
     ("now-building", "03", "Currently Building"),
-    ("stack", "04", "Tech Stack & Tools"),
+    ("stack", "04", "Tech Stack"),
     ("projects", "05", "Featured Projects"),
     ("activity", "06", "GitHub Activity"),
-    ("achievements", "07", "Achievements & Awards"),
-    ("connect", "08", "Let's Connect"),
+    ("achievements", "07", "Achievements"),
+    ("connect", "08", "Connect with Me"),
 ]
 
 def generate_header_svg(key, num, title):
-    # Escape & for XML compatibility
-    clean_title = title.replace("&", "&amp;")
     return f'''<svg width="920" height="68" viewBox="0 0 920 68" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="bg-grad-{key}" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -91,7 +89,7 @@ def generate_header_svg(key, num, title):
   <text x="39" y="40" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="800" fill="#FFFFFF" text-anchor="middle">{num}</text>
   
   <!-- Title -->
-  <text x="78" y="42" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="22" font-weight="700" fill="#F8FAFC">{clean_title}</text>
+  <text x="78" y="42" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="22" font-weight="700" fill="#F8FAFC">{title}</text>
   
   <!-- Accent Line -->
   <rect x="78" y="52" width="780" height="2" rx="1" fill="url(#line-grad-{key})"/>
@@ -184,4 +182,4 @@ skill_cards = f'''<svg width="920" height="{max_h}" viewBox="0 0 920 {max_h}" xm
 with open(os.path.join(BASE, "skill-cards.svg"), "w", encoding="utf-8") as f:
     f.write(skill_cards)
 
-print("Regenerated all SVGs with XML escaping & unique gradient IDs!")
+print("Regenerated all SVGs with clean titles!")
