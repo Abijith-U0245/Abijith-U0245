@@ -42,8 +42,8 @@
 <td width="50%" valign="top">
 
 ### Education
-**B.E. Computer Science & Engineering**
-Chennai Institute of Technology
+**B.E. Computer Science & Engineering**  
+Chennai Institute of Technology  
 `2024 – Present`  ·  `CGPA 9.10 / 10`
 
 ### Languages
@@ -53,7 +53,7 @@ Chennai Institute of Technology
 <td width="50%" valign="top">
 
 ### Competitive programming
-**LeetCode** — 725+ problems solved
+**LeetCode** — 725+ problems solved  
 Rating **1880 · Knight** · Top 5% of 778,000+ users
 
 ### Focus areas
@@ -68,26 +68,54 @@ Edge AI · Full-stack systems · IoT · Applied ML
 <a name="experience"></a>
 <img src="assets/headers/experience.svg" width="100%"/>
 
-**Edge AI Engineer Intern** · WG Tech
-<sub>Jun 2026 – Present · Chennai, India</sub>
+<table width="100%">
+<tr>
+<td width="100%">
 
-Developing a computer-vision quality inspection system using Python, OpenCV, YOLO11n, ONNX, and Axelera Metis. Built camera calibration and trained YOLO11n models for defect detection at 90–95% accuracy, and shipped a GO/NO-GO dashboard with automated reporting.
+### 💼 **Edge AI Engineer Intern** &nbsp;·&nbsp; *WG Tech*
+<sub>📅 `Jun 2026 – Present` &nbsp;·&nbsp; 📍 `Chennai, India`</sub>
 
-`Python` `OpenCV` `YOLO11n` `ONNX` `Axelera Metis`
+- 🎯 **Computer Vision Quality Inspection**: Developed an industrial CV quality inspection system using **Python**, **OpenCV**, **YOLO11n**, and **ONNX** deployed on **Axelera Metis** hardware.
+- 📐 **Calibration & Model Optimization**: Built precise camera calibration pipelines and trained YOLO11n models achieving **90–95% defect detection accuracy**.
+- 📊 **Real-time Reporting**: Shipped an automated GO/NO-GO inspection dashboard with automated defect reporting.
 
-**Product Developer Intern — Freelancer CRM Project** · Picabord Technologies Pvt. Ltd.
-<sub>Oct 2025 – Nov 2025 · Chennai, India</sub>
+<br/>
 
-Built and improved core CRM features for a freelancer platform, shaping product functionality and user workflow end-to-end. Dockerized the entire application for scalable deployment and integrated third-party APIs while fixing performance bottlenecks.
+<img src="https://img.shields.io/badge/Python-1E1B4B?style=flat-square&logo=python&logoColor=white"/> <img src="https://img.shields.io/badge/OpenCV-1E1B4B?style=flat-square&logo=opencv&logoColor=white"/> <img src="https://img.shields.io/badge/YOLO11n-1E1B4B?style=flat-square&logo=yolo&logoColor=00FFFF"/> <img src="https://img.shields.io/badge/ONNX-1E1B4B?style=flat-square&logo=onnx&logoColor=white"/> <img src="https://img.shields.io/badge/Axelera%20Metis-1E1B4B?style=flat-square&logo=cpu&logoColor=818CF8"/>
 
-`Docker` `Node.js` `MongoDB` `REST APIs`
+</td>
+</tr>
+<tr>
+<td>
 
-**Full Stack Developer Intern** · KaizenSpark Tech Pvt. Ltd.
-<sub>Jun 2025 – Aug 2025 · Chennai, India</sub>
+### 🚀 **Product Developer Intern — Freelancer CRM** &nbsp;·&nbsp; *Picabord Technologies Pvt. Ltd.*
+<sub>📅 `Oct 2025 – Nov 2025` &nbsp;·&nbsp; 📍 `Chennai, India`</sub>
 
-Enhanced production codebases using the MERN stack to deliver scalable web solutions. Worked within a 4-developer team using Git for coordinated feature development and bug resolution.
+- ⚡ **Core CRM Features**: Built end-to-end freelancer management features, shaping product functionality and user workflow.
+- 🐳 **Containerization & API Integration**: Fully **Dockerized** the application for scalable deployment and integrated third-party APIs while eliminating performance bottlenecks.
 
-`MongoDB` `Express` `React` `Node.js` `Git`
+<br/>
+
+<img src="https://img.shields.io/badge/Docker-1E1B4B?style=flat-square&logo=docker&logoColor=white"/> <img src="https://img.shields.io/badge/Node.js-1E1B4B?style=flat-square&logo=nodedotjs&logoColor=green"/> <img src="https://img.shields.io/badge/MongoDB-1E1B4B?style=flat-square&logo=mongodb&logoColor=green"/> <img src="https://img.shields.io/badge/REST%20APIs-1E1B4B?style=flat-square&logo=fastapi&logoColor=white"/>
+
+</td>
+</tr>
+<tr>
+<td>
+
+### 💻 **Full Stack Developer Intern** &nbsp;·&nbsp; *KaizenSpark Tech Pvt. Ltd.*
+<sub>📅 `Jun 2025 – Aug 2025` &nbsp;·&nbsp; 📍 `Chennai, India`</sub>
+
+- 🛠️ **Production MERN Solutions**: Enhanced production web codebases using the **MERN stack** to deliver scalable solutions.
+- 🤝 **Agile Collaboration**: Worked within a 4-developer team using **Git** for coordinated feature delivery and bug resolution.
+
+<br/>
+
+<img src="https://img.shields.io/badge/MongoDB-1E1B4B?style=flat-square&logo=mongodb&logoColor=green"/> <img src="https://img.shields.io/badge/Express-1E1B4B?style=flat-square&logo=express&logoColor=white"/> <img src="https://img.shields.io/badge/React-1E1B4B?style=flat-square&logo=react&logoColor=61DAFB"/> <img src="https://img.shields.io/badge/Node.js-1E1B4B?style=flat-square&logo=nodedotjs&logoColor=green"/> <img src="https://img.shields.io/badge/Git-1E1B4B?style=flat-square&logo=git&logoColor=F05032"/>
+
+</td>
+</tr>
+</table>
 
 <img src="assets/divider.svg" width="100%"/>
 
