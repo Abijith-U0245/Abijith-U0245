@@ -21,16 +21,16 @@
   <rect width="920" height="260" rx="16" fill="url(#bg-hero)"/>
   <rect width="920" height="260" rx="16" fill="url(#glow-hero)"/>
   
-  <text x="50" y="95" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="48" font-weight="800" fill="#F8FAFC">Abijith U</text>
-  <text x="52" y="132" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="18" fill="#C7D2FE">Edge AI Engineer · Full-Stack Developer · IoT Builder</text>
-  <text x="52" y="168" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="14" fill="#94A3B8">CSE @ Chennai Institute of Technology · Class of 2028</text>
+  <text x="45" y="95" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="44" font-weight="800" fill="#F8FAFC">Abijith U</text>
+  <text x="47" y="132" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="18" font-weight="600" fill="#C7D2FE">Edge AI Engineer · Full-Stack Developer · IoT Builder</text>
+  <text x="47" y="168" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="14" fill="#94A3B8">CSE @ Chennai Institute of Technology · Class of 2028</text>
   
   <g font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="13" fill="#94A3B8">
-    <text x="52" y="205">Chennai, India</text>
-    <text x="180" y="205">·</text>
-    <text x="195" y="205">Available now</text>
-    <text x="330" y="205">·</text>
-    <text x="345" y="205">GDG On Campus Secretary, CIT</text>
+    <text x="47" y="205">Chennai, India</text>
+    <text x="165" y="205">·</text>
+    <text x="180" y="205">Available now</text>
+    <text x="305" y="205">·</text>
+    <text x="320" y="205">GDG On Campus Secretary, CIT</text>
   </g>
 
   <!-- Glowing Outer Rings -->

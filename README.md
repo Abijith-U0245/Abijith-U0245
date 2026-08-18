@@ -6,26 +6,27 @@
 
 <br/>
 
-<a href="https://flowcv.com/resume/bs1k1hwu74bp"><img src="https://img.shields.io/badge/Resume-↗-4F46E5?style=for-the-badge&logoColor=white" height="30"/></a>
-<a href="https://www.linkedin.com/in/abijithu45"><img src="https://img.shields.io/badge/LinkedIn-4F46E5?style=for-the-badge&logo=linkedin&logoColor=white" height="30"/></a>
-<a href="mailto:abijithu0245@gmail.com"><img src="https://img.shields.io/badge/Email-4F46E5?style=for-the-badge&logo=gmail&logoColor=white" height="30"/></a>
-<a href="https://leetcode.com/u/Abijith_U/"><img src="https://img.shields.io/badge/LeetCode-4F46E5?style=for-the-badge&logo=leetcode&logoColor=white" height="30"/></a>
-<a href="https://abijithu.netlify.app/"><img src="https://img.shields.io/badge/Portfolio-4F46E5?style=for-the-badge&logo=vercel&logoColor=white" height="30"/></a>
+<a href="https://flowcv.com/resume/bs1k1hwu74bp"><img src="https://img.shields.io/badge/Resume-↗-4F46E5?style=for-the-badge&logoColor=white" height="28"/></a>
+<a href="https://www.linkedin.com/in/abijithu45"><img src="https://img.shields.io/badge/LinkedIn-4F46E5?style=for-the-badge&logo=linkedin&logoColor=white" height="28"/></a>
+<a href="mailto:abijithu0245@gmail.com"><img src="https://img.shields.io/badge/Email-4F46E5?style=for-the-badge&logo=gmail&logoColor=white" height="28"/></a>
+<a href="https://leetcode.com/u/Abijith_U/"><img src="https://img.shields.io/badge/LeetCode-4F46E5?style=for-the-badge&logo=leetcode&logoColor=white" height="28"/></a>
+<a href="https://abijithu.netlify.app/"><img src="https://img.shields.io/badge/Portfolio-4F46E5?style=for-the-badge&logo=vercel&logoColor=white" height="28"/></a>
 
 <br/><br/>
 
-<img src="https://komarev.com/ghpvc/?username=Abijith-U0245&label=PROFILE+VIEWS&color=4F46E5&style=for-the-badge" height="28"/>
-<img src="https://img.shields.io/github/followers/Abijith-U0245?label=FOLLOWERS&style=for-the-badge&color=4F46E5&labelColor=1E1B4B" height="28"/>
+<img src="https://komarev.com/ghpvc/?username=Abijith-U0245&label=PROFILE+VIEWS&color=4F46E5&style=for-the-badge" height="26"/>
+<img src="https://img.shields.io/github/followers/Abijith-U0245?label=FOLLOWERS&style=for-the-badge&color=4F46E5&labelColor=1E1B4B" height="26"/>
 
-<div align="center">
-  <a href="#about"><img src="assets/nav/about.svg" alt="About" height="34"/></a>
-  <a href="#experience"><img src="assets/nav/experience.svg" alt="Experience" height="34"/></a>
-  <a href="#now-building"><img src="assets/nav/now-building.svg" alt="Now Building" height="34"/></a>
-  <a href="#stack"><img src="assets/nav/stack.svg" alt="Tech Stack" height="34"/></a>
-  <a href="#projects"><img src="assets/nav/projects.svg" alt="Projects" height="34"/></a>
-  <a href="#activity"><img src="assets/nav/activity.svg" alt="Activity" height="34"/></a>
-  <a href="#achievements"><img src="assets/nav/achievements.svg" alt="Achievements" height="34"/></a>
-  <a href="#connect"><img src="assets/nav/connect.svg" alt="Connect" height="34"/></a>
+<br/><br/>
+
+  <a href="#about"><img src="assets/nav/about.svg" alt="About" height="30"/></a>
+  <a href="#experience"><img src="assets/nav/experience.svg" alt="Experience" height="30"/></a>
+  <a href="#now-building"><img src="assets/nav/now-building.svg" alt="Now Building" height="30"/></a>
+  <a href="#stack"><img src="assets/nav/stack.svg" alt="Tech Stack" height="30"/></a>
+  <a href="#projects"><img src="assets/nav/projects.svg" alt="Projects" height="30"/></a>
+  <a href="#activity"><img src="assets/nav/activity.svg" alt="Activity" height="30"/></a>
+  <a href="#achievements"><img src="assets/nav/achievements.svg" alt="Achievements" height="30"/></a>
+  <a href="#connect"><img src="assets/nav/connect.svg" alt="Connect" height="30"/></a>
 </div>
 
 <br/>
@@ -52,11 +53,11 @@ Chennai Institute of Technology
 </td>
 <td width="50%" valign="top">
 
-### Competitive programming
+### Competitive Programming
 **LeetCode** — 725+ problems solved  
 Rating **1880 · Knight** · Top 5% of 778,000+ users
 
-### Focus areas
+### Focus Areas
 Edge AI · Full-stack systems · IoT · Applied ML
 
 </td>
@@ -134,28 +135,69 @@ Edge AI · Full-stack systems · IoT · Applied ML
 <a name="stack"></a>
 <img src="assets/headers/stack.svg" width="100%"/>
 
-<img src="assets/skill-cards.svg" width="100%"/>
+<table width="100%">
+<tr>
+<td width="50%" valign="top">
+
+### **Full-Stack**
+- React / Next.js
+- FastAPI / Node.js
+- MongoDB / MySQL
+- Tailwind CSS
+
+</td>
+<td width="50%" valign="top">
+
+### **Edge AI & CV**
+- YOLO11n / ONNX
+- OpenCV / PyTorch
+- Axelera Metis
+- Camera Calibration
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### **IoT Systems**
+- ESP32 / Arduino
+- MQTT / InfluxDB
+- Raspberry Pi
+- Redis Caching
+
+</td>
+<td width="50%" valign="top">
+
+### **Applied ML**
+- XGBoost / Prophet
+- Isolation Forest
+- Scikit-learn
+- LangChain / RAG
+
+</td>
+</tr>
+</table>
 
 <br/>
 
 <table width="100%">
-<tr><td width="20%" align="center"><b>Languages</b></td><td width="80%"><img src="https://skillicons.dev/icons?i=c,cpp,python,java,js&theme=dark" height="40"></td></tr>
-<tr><td align="center"><b>Frontend</b></td><td><img src="https://skillicons.dev/icons?i=react,nextjs,vue,tailwind,html,css&theme=dark" height="40"></td></tr>
-<tr><td align="center"><b>Backend & data</b></td><td><img src="https://skillicons.dev/icons?i=nodejs,express,firebase,mysql,mongodb,fastapi,kafka&theme=dark" height="40"></td></tr>
-<tr><td align="center"><b>IoT & embedded</b></td><td>
-<img src="https://img.shields.io/badge/ESP32-1E1B4B?style=for-the-badge&logo=espressif&logoColor=E7352C" height="32">
-<img src="https://img.shields.io/badge/Arduino-1E1B4B?style=for-the-badge&logo=arduino&logoColor=00979D" height="32">
-<img src="https://img.shields.io/badge/Raspberry%20Pi-1E1B4B?style=for-the-badge&logo=raspberrypi&logoColor=A22846" height="32">
-<img src="https://img.shields.io/badge/MQTT-1E1B4B?style=for-the-badge&logo=mqtt&logoColor=660066" height="32">
+<tr><td width="25%"><b>Languages</b></td><td width="75%"><img src="https://skillicons.dev/icons?i=c,cpp,python,java,js&theme=dark" height="34"></td></tr>
+<tr><td><b>Frontend</b></td><td><img src="https://skillicons.dev/icons?i=react,nextjs,vue,tailwind,html,css&theme=dark" height="34"></td></tr>
+<tr><td><b>Backend & Data</b></td><td><img src="https://skillicons.dev/icons?i=nodejs,express,firebase,mysql,mongodb,fastapi,kafka&theme=dark" height="34"></td></tr>
+<tr><td><b>IoT & Embedded</b></td><td>
+<img src="https://img.shields.io/badge/ESP32-1E1B4B?style=flat-square&logo=espressif&logoColor=E7352C" height="26">
+<img src="https://img.shields.io/badge/Arduino-1E1B4B?style=flat-square&logo=arduino&logoColor=00979D" height="26">
+<img src="https://img.shields.io/badge/Raspberry%20Pi-1E1B4B?style=flat-square&logo=raspberrypi&logoColor=A22846" height="26">
+<img src="https://img.shields.io/badge/MQTT-1E1B4B?style=flat-square&logo=mqtt&logoColor=660066" height="26">
 </td></tr>
-<tr><td align="center"><b>AI / ML / CV</b></td><td>
-<img src="https://img.shields.io/badge/PyTorch-1E1B4B?style=for-the-badge&logo=pytorch&logoColor=EE4C2C" height="32">
-<img src="https://img.shields.io/badge/OpenCV-1E1B4B?style=for-the-badge&logo=opencv&logoColor=white" height="32">
-<img src="https://img.shields.io/badge/YOLO-1E1B4B?style=for-the-badge&logo=yolo&logoColor=00FFFF" height="32">
-<img src="https://img.shields.io/badge/LangChain-1E1B4B?style=for-the-badge&logo=langchain&logoColor=1C3C3C" height="32">
-<img src="https://img.shields.io/badge/XGBoost-1E1B4B?style=for-the-badge&logo=xgboost&logoColor=white" height="32">
+<tr><td><b>AI / ML / CV</b></td><td>
+<img src="https://img.shields.io/badge/PyTorch-1E1B4B?style=flat-square&logo=pytorch&logoColor=EE4C2C" height="26">
+<img src="https://img.shields.io/badge/OpenCV-1E1B4B?style=flat-square&logo=opencv&logoColor=white" height="26">
+<img src="https://img.shields.io/badge/YOLO-1E1B4B?style=flat-square&logo=yolo&logoColor=00FFFF" height="26">
+<img src="https://img.shields.io/badge/LangChain-1E1B4B?style=flat-square&logo=langchain&logoColor=1C3C3C" height="26">
+<img src="https://img.shields.io/badge/XGBoost-1E1B4B?style=flat-square&logo=xgboost&logoColor=white" height="26">
 </td></tr>
-<tr><td align="center"><b>Infra & tools</b></td><td><img src="https://skillicons.dev/icons?i=docker,aws,git,github,vercel,figma&theme=dark" height="40"></td></tr>
+<tr><td><b>Infra & Tools</b></td><td><img src="https://skillicons.dev/icons?i=docker,aws,git,github,vercel,figma&theme=dark" height="34"></td></tr>
 </table>
 
 <br/>
@@ -171,44 +213,45 @@ Edge AI · Full-stack systems · IoT · Applied ML
 
 <table width="100%">
 <tr>
-<td width="25%" valign="top">
+<td width="50%" valign="top">
 
-**GigEase**
-<sub>AI's parametric insurance platform</sub>
+### **GigEase**
+<sub>AI Parametric Insurance Platform</sub>
 
-Auto-detects floods and disruptions for gig delivery workers via live APIs, crediting UPI within 10 minutes — zero claim filing. 4-layer fraud detection (Isolation Forest + DBSCAN + GPS-cell fusion) with XGBoost + Prophet for dynamic premium pricing.
+Auto-detects floods and disruptions for gig delivery workers via live APIs, crediting UPI within 10 minutes — zero claim filing. 4-layer fraud detection with XGBoost + Prophet pricing.
 
-<sub>`FastAPI` `React` `XGBoost` `Kafka` `Cassandra` `LangChain`</sub>
-
+<sub>`FastAPI` `React` `XGBoost` `Kafka` `LangChain`</sub>  
 <sub>**Top 10 / 5,000+ teams** — Guidewire DevTrails 2026</sub>
 
 </td>
-<td width="25%" valign="top">
+<td width="50%" valign="top">
 
-**SWASTHA**
-<sub>Water quality assessment system</sub>
+### **SWASTHA**
+<sub>Water Quality Assessment System</sub>
 
-ESP32-based IoT water monitoring with real-time sensing, cloud connectivity, and offline WHO-threshold alerts. React + MQTT + InfluxDB + Redis dashboard; Isolation Forest and Random Forest models hit 96.44% accuracy with automated SMS/FCM alerts.
+ESP32-based IoT water monitoring with real-time sensing, cloud connectivity, and WHO-threshold alerts. React + MQTT + InfluxDB + Redis dashboard with 96.44% ML accuracy.
 
-<sub>`ESP32` `MQTT` `InfluxDB` `Redis` `FastAPI` `Scikit-learn`</sub>
+<sub>`ESP32` `MQTT` `InfluxDB` `Redis` `FastAPI`</sub>
 
 </td>
-<td width="25%" valign="top">
+</tr>
+<tr>
+<td width="50%" valign="top">
 
-**CARES**
-<sub>RAG-based document intelligence</sub>
+### **CARES**
+<sub>RAG Document Intelligence</sub>
 
-Context-aware Q&A over uploaded documents via a custom retrieval-augmented generation pipeline. FastAPI backend handles ingestion and embedding retrieval with full OpenAPI docs; Next.js frontend delivers real-time AI responses.
+Context-aware Q&A over uploaded documents via a custom retrieval-augmented generation pipeline with FastAPI backend & Next.js frontend.
 
 <sub>`Next.js` `FastAPI` `Python` `RAG`</sub>
 
 </td>
-<td width="25%" valign="top">
+<td width="50%" valign="top">
 
-**ShruthiAI**
-<sub>Offline Hindi voice assistant</sub>
+### **ShruthiAI**
+<sub>Offline Hindi Voice Assistant</sub>
 
-A fully offline voice assistant running entirely on Raspberry Pi with zero internet dependency, built for privacy and low-resource environments. On-device STT (Vosk), intent handling, and offline TTS (eSpeak NG) tuned for ARM hardware.
+Fully offline voice assistant running on Raspberry Pi with zero internet dependency. On-device STT (Vosk) and offline TTS (eSpeak NG) tuned for ARM.
 
 <sub>`Raspberry Pi` `Python` `Vosk` `eSpeak NG`</sub>
 
@@ -225,12 +268,12 @@ A fully offline voice assistant running entirely on Raspberry Pi with zero inter
 
 <div align="center">
 
-<img src="https://github-readme-stats-fast.vercel.app/api?username=Abijith-U0245&show_icons=true&theme=transparent&hide_border=true&include_all_commits=true&count_private=true&title_color=A5B4FC&icon_color=818CF8&text_color=94A3B8&ring_color=818CF8" height="165"/>
-<img src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=Abijith-U0245&layout=compact&theme=transparent&hide_border=true&title_color=A5B4FC&text_color=94A3B8&langs_count=7" height="165"/>
+<img src="https://github-readme-stats-fast.vercel.app/api?username=Abijith-U0245&show_icons=true&theme=transparent&hide_border=true&include_all_commits=true&count_private=true&title_color=A5B4FC&icon_color=818CF8&text_color=94A3B8&ring_color=818CF8" height="160"/>
+<img src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=Abijith-U0245&layout=compact&theme=transparent&hide_border=true&title_color=A5B4FC&text_color=94A3B8&langs_count=7" height="160"/>
 
 <br/>
 
-<img src="https://streak-stats.demolab.com?user=Abijith-U0245&theme=transparent&hide_border=true&ring=818CF8&fire=A5B4FC&currStreakLabel=A5B4FC&sideLabels=94A3B8&currStreakNum=E2E8F0&sideNums=E2E8F0&dates=64748B" height="165"/>
+<img src="https://streak-stats.demolab.com?user=Abijith-U0245&theme=transparent&hide_border=true&ring=818CF8&fire=A5B4FC&currStreakLabel=A5B4FC&sideLabels=94A3B8&currStreakNum=E2E8F0&sideNums=E2E8F0&dates=64748B" height="160"/>
 
 <br/><br/>
 
@@ -244,10 +287,10 @@ A fully offline voice assistant running entirely on Raspberry Pi with zero inter
 <img src="assets/headers/achievements.svg" width="100%"/>
 
 <table width="100%">
-<tr><td width="30%"><b>Guidewire DevTrails 2026</b></td><td>Top 10 finalist among 5,000+ teams nationally, with GigEase</td></tr>
+<tr><td width="35%"><b>Guidewire DevTrails 2026</b></td><td>Top 10 finalist among 5,000+ teams nationally, with GigEase</td></tr>
 <tr><td><b>LeetCode</b></td><td>725+ problems solved · Rating 1880 · Knight, Top 5% of 778,000+ participants</td></tr>
-<tr><td><b>Ideathon ConceptX 1.0 (2026)</b></td><td>Runner-up, Center for Advanced Multidisciplinary Research and Innovation (CAMRI)</td></tr>
-<tr><td><b>UPCycle 2K25 (2025)</b></td><td>Top finalist — 24-hr innovation bootcamp, VMRF-DU & StartupTN</td></tr>
+<tr><td><b>Ideathon ConceptX 1.0</b></td><td>Runner-up, Center for Advanced Multidisciplinary Research & Innovation</td></tr>
+<tr><td><b>UPCycle 2K25</b></td><td>Top finalist — 24-hr innovation bootcamp, VMRF-DU & StartupTN</td></tr>
 <tr><td><b>Hindi Language Proficiency</b></td><td>All levels completed, Dakshin Bharat Hindi Prachar Sabha (DBHPS)</td></tr>
 <tr><td><b>GDG On Campus CIT</b></td><td>Secretary — planning & running technical workshops and hackathons</td></tr>
 </table>
@@ -258,25 +301,23 @@ A fully offline voice assistant running entirely on Raspberry Pi with zero inter
 
 <table width="100%">
 <tr>
-<td width="33%" valign="top">
+<td width="100%">
 
-<img src="https://img.shields.io/badge/AWS-1E1B4B?style=for-the-badge&logo=amazonaws&logoColor=FF9900" height="30"/><br/><br/>
-**AWS Cloud Practitioner Essentials**  
-<sub>AWS Skill Builder</sub>
+<img src="https://img.shields.io/badge/AWS-1E1B4B?style=flat-square&logo=amazonaws&logoColor=FF9900" height="26"/> &nbsp; **AWS Cloud Practitioner Essentials** &nbsp;·&nbsp; <sub>AWS Skill Builder</sub>
 
 </td>
-<td width="33%" valign="top">
+</tr>
+<tr>
+<td>
 
-<img src="https://img.shields.io/badge/MongoDB-1E1B4B?style=for-the-badge&logo=mongodb&logoColor=47A248" height="30"/><br/><br/>
-**MongoDB Skill Certifications**  
-<sub>MongoDB University</sub>
+<img src="https://img.shields.io/badge/MongoDB-1E1B4B?style=flat-square&logo=mongodb&logoColor=47A248" height="26"/> &nbsp; **MongoDB Skill Certifications** &nbsp;·&nbsp; <sub>MongoDB University</sub>
 
 </td>
-<td width="33%" valign="top">
+</tr>
+<tr>
+<td>
 
-<img src="https://img.shields.io/badge/Cisco-1E1B4B?style=for-the-badge&logo=cisco&logoColor=1BA0D7" height="30"/><br/><br/>
-**CCNA: Introduction to Networks**  
-<sub>Cisco Networking Academy</sub>
+<img src="https://img.shields.io/badge/Cisco-1E1B4B?style=flat-square&logo=cisco&logoColor=1BA0D7" height="26"/> &nbsp; **CCNA: Introduction to Networks** &nbsp;·&nbsp; <sub>Cisco Networking Academy</sub>
 
 </td>
 </tr>

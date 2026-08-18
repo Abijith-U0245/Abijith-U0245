@@ -125,7 +125,7 @@ divider = f'''<svg width="920" height="4" viewBox="0 0 920 4" xmlns="http://www.
 with open(os.path.join(BASE, "divider.svg"), "w", encoding="utf-8") as f:
     f.write(divider)
 
-# 4. HERO BANNER SVG (WITH GITHUB AVATAR)
+# 4. HERO BANNER SVG (OPTIMIZED FOR MOBILE & DESKTOP)
 img_tag = f'<image href="data:image/png;base64,{avatar_b64}" x="705" y="55" width="150" height="150" clip-path="url(#avatar-clip)"/>' if avatar_b64 else '<image href="https://github.com/Abijith-U0245.png" x="705" y="55" width="150" height="150" clip-path="url(#avatar-clip)"/>'
 
 hero = f'''<svg width="920" height="260" viewBox="0 0 920 260" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -151,16 +151,16 @@ hero = f'''<svg width="920" height="260" viewBox="0 0 920 260" xmlns="http://www
   <rect width="920" height="260" rx="16" fill="url(#bg-hero)"/>
   <rect width="920" height="260" rx="16" fill="url(#glow-hero)"/>
   
-  <text x="50" y="95" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="48" font-weight="800" fill="{WHITE}">Abijith U</text>
-  <text x="52" y="132" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="18" fill="{LILAC}">Edge AI Engineer · Full-Stack Developer · IoT Builder</text>
-  <text x="52" y="168" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="14" fill="{SLATE}">CSE @ Chennai Institute of Technology · Class of 2028</text>
+  <text x="45" y="95" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="44" font-weight="800" fill="{WHITE}">Abijith U</text>
+  <text x="47" y="132" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="18" font-weight="600" fill="{LILAC}">Edge AI Engineer · Full-Stack Developer · IoT Builder</text>
+  <text x="47" y="168" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="14" fill="{SLATE}">CSE @ Chennai Institute of Technology · Class of 2028</text>
   
   <g font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="13" fill="{SLATE}">
-    <text x="52" y="205">Chennai, India</text>
-    <text x="180" y="205">·</text>
-    <text x="195" y="205">Available now</text>
-    <text x="330" y="205">·</text>
-    <text x="345" y="205">GDG On Campus Secretary, CIT</text>
+    <text x="47" y="205">Chennai, India</text>
+    <text x="165" y="205">·</text>
+    <text x="180" y="205">Available now</text>
+    <text x="305" y="205">·</text>
+    <text x="320" y="205">GDG On Campus Secretary, CIT</text>
   </g>
 
   <!-- Glowing Outer Rings -->
@@ -174,34 +174,4 @@ hero = f'''<svg width="920" height="260" viewBox="0 0 920 260" xmlns="http://www
 with open(os.path.join(BASE, "hero-banner.svg"), "w", encoding="utf-8") as f:
     f.write(hero)
 
-# 5. SKILL CARDS SVG
-def skill_card(x, title, items, level):
-    lines = "".join(
-        f'<text x="{x+18}" y="{58+18*i}" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="12" fill="{SLATE}">• {it}</text>'
-        for i, it in enumerate(items)
-    )
-    bar_w = int(200 * level / 100)
-    return f'''
-  <rect x="{x}" y="0" width="220" height="{58+18*len(items)+30}" rx="10" fill="{INDIGO_DARK}" stroke="{ACCENT}" stroke-opacity="0.4"/>
-  <text x="{x+18}" y="30" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="15" font-weight="700" fill="{LILAC}">{title}</text>
-  {lines}
-  <rect x="{x+18}" y="{58+18*len(items)+8}" width="184" height="6" rx="3" fill="{NAVY}"/>
-  <rect x="{x+18}" y="{58+18*len(items)+8}" width="{bar_w-16 if bar_w>16 else 4}" height="6" rx="3" fill="{ACCENT}"/>
-'''
-
-cards = [
-    (0, "Full-Stack", ["React / Next.js", "FastAPI / Node.js", "MongoDB / MySQL", "Tailwind CSS"], 90),
-    (230, "Edge AI / CV", ["YOLO11n / ONNX", "OpenCV", "PyTorch", "Axelera Metis"], 82),
-    (460, "IoT Systems", ["ESP32 / Arduino", "MQTT / InfluxDB", "Raspberry Pi", "Redis"], 85),
-    (690, "Applied ML", ["XGBoost / Prophet", "Isolation Forest", "Scikit-learn", "LangChain / RAG"], 88),
-]
-
-max_h = max(58+18*len(c[2])+40 for c in cards)
-body = "".join(skill_card(x, t, it, lv) for x, t, it, lv in cards)
-skill_cards = f'''<svg width="920" height="{max_h}" viewBox="0 0 920 {max_h}" xmlns="http://www.w3.org/2000/svg">
-{body}
-</svg>'''
-with open(os.path.join(BASE, "skill-cards.svg"), "w", encoding="utf-8") as f:
-    f.write(skill_cards)
-
-print("Generated hero banner with embedded GitHub avatar!")
+print("Generated updated hero banner SVG!")
