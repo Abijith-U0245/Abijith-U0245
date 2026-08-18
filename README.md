@@ -135,7 +135,7 @@ Edge AI · Full-stack systems · IoT · Applied ML
 <a name="stack"></a>
 <img src="assets/headers/stack.svg" width="100%"/>
 
-<img src="assets/skill-cards.svg" width="100%"/>
+<img src="assets/skill-cards.svg?v=2" width="100%"/>
 
 <br/>
 

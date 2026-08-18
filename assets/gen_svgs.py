@@ -175,52 +175,59 @@ hero = f'''<svg width="920" height="260" viewBox="0 0 920 260" xmlns="http://www
 with open(os.path.join(BASE, "hero-banner.svg"), "w", encoding="utf-8") as f:
     f.write(hero)
 
-# 5. STUNNING HIGH-CONTRAST SKILL CARDS SVG (XML-VALIDATED)
-def skill_card_svg(x, title, items, level):
-    lines = "".join(
-        f'<text x="{x+20}" y="{65+20*i}" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="13" font-weight="500" fill="{SLATE_LIGHT}">• {it}</text>'
-        for i, it in enumerate(items)
-    )
+# 5. PURE VECTOR SKILL CARDS SVG (100% ASCII & SANITIZER PROOF)
+def skill_card_svg(x, title, items, level, card_idx):
+    lines_list = []
+    for i, it in enumerate(items):
+        cy = 61 + 20 * i
+        ty = 65 + 20 * i
+        lines_list.append(f'<circle cx="{x+25}" cy="{cy}" r="3" fill="#818CF8"/>')
+        lines_list.append(f'<text x="{x+35}" y="{ty}" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="13" font-weight="500" fill="{SLATE_LIGHT}">{it}</text>')
+    
+    lines = "\n  ".join(lines_list)
     bar_w = int(175 * level / 100)
+    
     return f'''
-  <!-- Card Base -->
-  <rect x="{x}" y="0" width="215" height="170" rx="14" fill="url(#card-bg)" stroke="#3730A3" stroke-width="1.5"/>
+  <!-- Card Base {card_idx} -->
+  <rect x="{x}" y="0" width="215" height="170" rx="14" fill="url(#card-bg-{card_idx})" stroke="#3730A3" stroke-width="1.5"/>
   
   <!-- Category Header -->
-  <rect x="{x+15}" y="15" width="185" height="28" rx="8" fill="url(#badge-bg)"/>
+  <rect x="{x+15}" y="15" width="185" height="28" rx="8" fill="url(#badge-bg-{card_idx})"/>
   <text x="{x+25}" y="34" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF">{title}</text>
   
-  <!-- Items -->
+  <!-- Bullet Items -->
   {lines}
   
   <!-- Progress Bar -->
   <rect x="{x+20}" y="150" width="175" height="6" rx="3" fill="#0F172A"/>
-  <rect x="{x+20}" y="150" width="{bar_w}" height="6" rx="3" fill="url(#bar-grad)"/>
+  <rect x="{x+20}" y="150" width="{bar_w}" height="6" rx="3" fill="url(#bar-grad-{card_idx})"/>
 '''
 
 cards_data = [
-    (10, "Full-Stack", ["React / Next.js", "FastAPI / Node.js", "MongoDB / MySQL", "Tailwind CSS"], 90),
-    (240, "Edge AI + CV", ["YOLO11n / ONNX", "OpenCV / PyTorch", "Axelera Metis", "Camera Calibration"], 85),
-    (470, "IoT Systems", ["ESP32 / Arduino", "MQTT / InfluxDB", "Raspberry Pi", "Redis Caching"], 88),
-    (700, "Applied ML", ["XGBoost / Prophet", "Isolation Forest", "Scikit-learn", "LangChain / RAG"], 92),
+    (10, "Full-Stack", ["React / Next.js", "FastAPI / Node.js", "MongoDB / MySQL", "Tailwind CSS"], 90, 1),
+    (240, "Edge AI + CV", ["YOLO11n / ONNX", "OpenCV / PyTorch", "Axelera Metis", "Camera Calibration"], 85, 2),
+    (470, "IoT Systems", ["ESP32 / Arduino", "MQTT / InfluxDB", "Raspberry Pi", "Redis Caching"], 88, 3),
+    (700, "Applied ML", ["XGBoost / Prophet", "Isolation Forest", "Scikit-learn", "LangChain / RAG"], 92, 4),
 ]
 
-cards_body = "".join(skill_card_svg(x, t, it, lv) for x, t, it, lv in cards_data)
+cards_body = "".join(skill_card_svg(x, t, it, lv, idx) for x, t, it, lv, idx in cards_data)
 
 skill_cards = f'''<svg width="920" height="175" viewBox="0 0 920 175" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="card-bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#1E1B4B"/>
-      <stop offset="100%" stop-color="#0F172A"/>
-    </linearGradient>
-    <linearGradient id="badge-bg" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#4F46E5"/>
-      <stop offset="100%" stop-color="#6366F1"/>
-    </linearGradient>
-    <linearGradient id="bar-grad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#6366F1"/>
-      <stop offset="100%" stop-color="#A5B4FC"/>
-    </linearGradient>
+    <linearGradient id="card-bg-1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#1E1B4B"/><stop offset="100%" stop-color="#0F172A"/></linearGradient>
+    <linearGradient id="card-bg-2" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#1E1B4B"/><stop offset="100%" stop-color="#0F172A"/></linearGradient>
+    <linearGradient id="card-bg-3" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#1E1B4B"/><stop offset="100%" stop-color="#0F172A"/></linearGradient>
+    <linearGradient id="card-bg-4" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#1E1B4B"/><stop offset="100%" stop-color="#0F172A"/></linearGradient>
+
+    <linearGradient id="badge-bg-1" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#4F46E5"/><stop offset="100%" stop-color="#6366F1"/></linearGradient>
+    <linearGradient id="badge-bg-2" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#4F46E5"/><stop offset="100%" stop-color="#6366F1"/></linearGradient>
+    <linearGradient id="badge-bg-3" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#4F46E5"/><stop offset="100%" stop-color="#6366F1"/></linearGradient>
+    <linearGradient id="badge-bg-4" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#4F46E5"/><stop offset="100%" stop-color="#6366F1"/></linearGradient>
+
+    <linearGradient id="bar-grad-1" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#6366F1"/><stop offset="100%" stop-color="#A5B4FC"/></linearGradient>
+    <linearGradient id="bar-grad-2" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#6366F1"/><stop offset="100%" stop-color="#A5B4FC"/></linearGradient>
+    <linearGradient id="bar-grad-3" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#6366F1"/><stop offset="100%" stop-color="#A5B4FC"/></linearGradient>
+    <linearGradient id="bar-grad-4" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#6366F1"/><stop offset="100%" stop-color="#A5B4FC"/></linearGradient>
   </defs>
   {cards_body}
 </svg>'''
@@ -228,4 +235,4 @@ skill_cards = f'''<svg width="920" height="175" viewBox="0 0 920 175" xmlns="htt
 with open(os.path.join(BASE, "skill-cards.svg"), "w", encoding="utf-8") as f:
     f.write(skill_cards)
 
-print("Regenerated XML-safe skill-cards.svg!")
+print("Generated vector skill-cards.svg with unique gradient IDs!")
