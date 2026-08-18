@@ -1,21 +1,21 @@
 <svg width="920" height="260" viewBox="0 0 920 260" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="bg-hero" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#0F172A"/>
       <stop offset="50%" stop-color="#1E1B4B"/>
       <stop offset="100%" stop-color="#312E81"/>
     </linearGradient>
-    <radialGradient id="glow" cx="80%" cy="20%" r="60%">
+    <radialGradient id="glow-hero" cx="80%" cy="20%" r="60%">
       <stop offset="0%" stop-color="#4F46E5" stop-opacity="0.35"/>
       <stop offset="100%" stop-color="#4F46E5" stop-opacity="0"/>
     </radialGradient>
   </defs>
-  <rect width="920" height="260" rx="16" fill="url(#bg)"/>
-  <rect width="920" height="260" rx="16" fill="url(#glow)"/>
-  <text x="60" y="110" font-family="JetBrains Mono, Consolas, monospace" font-size="52" font-weight="800" fill="#F8FAFC">Abijith U</text>
-  <text x="62" y="145" font-family="JetBrains Mono, Consolas, monospace" font-size="18" fill="#C7D2FE">Edge AI Engineer · Full-Stack Developer · IoT Builder</text>
-  <text x="62" y="180" font-family="JetBrains Mono, Consolas, monospace" font-size="14" fill="#94A3B8">CSE @ Chennai Institute of Technology · Class of 2028</text>
-  <g font-family="JetBrains Mono, Consolas, monospace" font-size="13" fill="#94A3B8">
+  <rect width="920" height="260" rx="16" fill="url(#bg-hero)"/>
+  <rect width="920" height="260" rx="16" fill="url(#glow-hero)"/>
+  <text x="60" y="110" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="52" font-weight="800" fill="#F8FAFC">Abijith U</text>
+  <text x="62" y="145" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="18" fill="#C7D2FE">Edge AI Engineer · Full-Stack Developer · IoT Builder</text>
+  <text x="62" y="180" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#94A3B8">CSE @ Chennai Institute of Technology · Class of 2028</text>
+  <g font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#94A3B8">
     <text x="62" y="215">Chennai, India</text>
     <text x="220" y="215">·</text>
     <text x="235" y="215">Available now</text>

@@ -1,6 +1,6 @@
 <svg width="920" height="4" viewBox="0 0 920 4" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="d" x1="0%" y1="0%" x2="100%" y2="0%">
+    <linearGradient id="d-grad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#0F172A" stop-opacity="0"/>
       <stop offset="25%" stop-color="#4F46E5"/>
       <stop offset="50%" stop-color="#818CF8"/>
@@ -8,5 +8,5 @@
       <stop offset="100%" stop-color="#0F172A" stop-opacity="0"/>
     </linearGradient>
   </defs>
-  <rect width="920" height="4" rx="2" fill="url(#d)"/>
+  <rect width="920" height="4" rx="2" fill="url(#d-grad)"/>
 </svg>

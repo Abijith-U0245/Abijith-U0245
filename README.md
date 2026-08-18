@@ -212,8 +212,6 @@ A fully offline voice assistant running entirely on Raspberry Pi with zero inter
 
 </div>
 
-<sub>⚠️ Live/dynamic images (stats, streak, top-langs, snake) render once this repo is pushed to `github.com/Abijith-U0245/Abijith-U0245` — see **SETUP.md** for the one-time steps.</sub>
-
 <img src="assets/divider.svg" width="100%"/>
 
 <a name="achievements"></a>

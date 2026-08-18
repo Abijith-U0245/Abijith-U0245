@@ -32,29 +32,25 @@ nav_items = [
 def generate_nav_pill(key, label, icon, width):
     return f'''<svg width="{width}" height="38" viewBox="0 0 {width} 38" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="bg-{key}" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="bg-nav-{key}" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#1E1B4B"/>
       <stop offset="100%" stop-color="#312E81"/>
     </linearGradient>
-    <linearGradient id="border-{key}" x1="0%" y1="0%" x2="100%" y2="0%">
+    <linearGradient id="border-nav-{key}" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#6366F1"/>
       <stop offset="100%" stop-color="#A5B4FC"/>
     </linearGradient>
-    <filter id="glow-{key}" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="3" result="blur" />
-      <feComposite in="SourceGraphic" in2="blur" operator="over" />
-    </filter>
   </defs>
-  <rect x="1" y="1" width="{width-2}" height="36" rx="18" fill="url(#bg-{key})" stroke="url(#border-{key})" stroke-width="1.5"/>
+  <rect x="1" y="1" width="{width-2}" height="36" rx="18" fill="url(#bg-nav-{key})" stroke="url(#border-nav-{key})" stroke-width="1.5"/>
   <circle cx="20" cy="19" r="4" fill="#818CF8"/>
-  <text x="32" y="24" font-family="System-UI, -apple-system, Segoe UI, Roboto, Helvetica, sans-serif" font-size="13" font-weight="600" fill="#F8FAFC">{label}</text>
+  <text x="32" y="24" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#F8FAFC">{label}</text>
 </svg>'''
 
 for key, label, icon, width in nav_items:
     with open(os.path.join(NAV_DIR, f"{key}.svg"), "w", encoding="utf-8") as f:
         f.write(generate_nav_pill(key, label, icon, width))
 
-# 2. GENERATE SECTION HEADERS SVGS
+# 2. GENERATE SECTION HEADERS SVGS WITH UNIQUE IDS
 headers_data = [
     ("about", "01", "About Me"),
     ("experience", "02", "Work Experience"),
@@ -66,19 +62,21 @@ headers_data = [
     ("connect", "08", "Let's Connect"),
 ]
 
-def generate_header_svg(num, title):
+def generate_header_svg(key, num, title):
+    # Escape & for XML compatibility
+    clean_title = title.replace("&", "&amp;")
     return f'''<svg width="920" height="68" viewBox="0 0 920 68" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+    <linearGradient id="bg-grad-{key}" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#0F172A"/>
       <stop offset="40%" stop-color="#1E1B4B"/>
       <stop offset="100%" stop-color="#312E81"/>
     </linearGradient>
-    <linearGradient id="badge-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="badge-grad-{key}" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#4F46E5"/>
       <stop offset="100%" stop-color="#818CF8"/>
     </linearGradient>
-    <linearGradient id="line-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+    <linearGradient id="line-grad-{key}" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#6366F1"/>
       <stop offset="50%" stop-color="#A5B4FC" stop-opacity="0.6"/>
       <stop offset="100%" stop-color="#0F172A" stop-opacity="0"/>
@@ -86,17 +84,17 @@ def generate_header_svg(num, title):
   </defs>
   
   <!-- Outer Card container -->
-  <rect width="920" height="68" rx="14" fill="url(#bg-grad)" stroke="#3730A3" stroke-width="1.2"/>
+  <rect width="920" height="68" rx="14" fill="url(#bg-grad-{key})" stroke="#3730A3" stroke-width="1.2"/>
   
   <!-- Number Badge -->
-  <rect x="16" y="16" width="46" height="36" rx="10" fill="url(#badge-grad)"/>
-  <text x="39" y="40" font-family="JetBrains Mono, monospace" font-size="16" font-weight="800" fill="#FFFFFF" text-anchor="middle">{num}</text>
+  <rect x="16" y="16" width="46" height="36" rx="10" fill="url(#badge-grad-{key})"/>
+  <text x="39" y="40" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="800" fill="#FFFFFF" text-anchor="middle">{num}</text>
   
   <!-- Title -->
-  <text x="78" y="42" font-family="JetBrains Mono, Segoe UI, sans-serif" font-size="22" font-weight="700" fill="#F8FAFC">{title}</text>
+  <text x="78" y="42" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="22" font-weight="700" fill="#F8FAFC">{clean_title}</text>
   
   <!-- Accent Line -->
-  <rect x="78" y="52" width="780" height="2" rx="1" fill="url(#line-grad)"/>
+  <rect x="78" y="52" width="780" height="2" rx="1" fill="url(#line-grad-{key})"/>
   
   <!-- Right Decorative Tech Grid -->
   <circle cx="875" cy="34" r="5" fill="#818CF8"/>
@@ -105,12 +103,12 @@ def generate_header_svg(num, title):
 
 for key, num, title in headers_data:
     with open(os.path.join(HEADERS_DIR, f"{key}.svg"), "w", encoding="utf-8") as f:
-        f.write(generate_header_svg(num, title))
+        f.write(generate_header_svg(key, num, title))
 
 # 3. DIVIDER SVG
 divider = f'''<svg width="920" height="4" viewBox="0 0 920 4" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="d" x1="0%" y1="0%" x2="100%" y2="0%">
+    <linearGradient id="d-grad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#0F172A" stop-opacity="0"/>
       <stop offset="25%" stop-color="#4F46E5"/>
       <stop offset="50%" stop-color="#818CF8"/>
@@ -118,7 +116,7 @@ divider = f'''<svg width="920" height="4" viewBox="0 0 920 4" xmlns="http://www.
       <stop offset="100%" stop-color="#0F172A" stop-opacity="0"/>
     </linearGradient>
   </defs>
-  <rect width="920" height="4" rx="2" fill="url(#d)"/>
+  <rect width="920" height="4" rx="2" fill="url(#d-grad)"/>
 </svg>'''
 
 with open(os.path.join(BASE, "divider.svg"), "w", encoding="utf-8") as f:
@@ -127,22 +125,22 @@ with open(os.path.join(BASE, "divider.svg"), "w", encoding="utf-8") as f:
 # 4. HERO BANNER SVG
 hero = f'''<svg width="920" height="260" viewBox="0 0 920 260" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="bg-hero" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="{NAVY}"/>
       <stop offset="50%" stop-color="{INDIGO_DARK}"/>
       <stop offset="100%" stop-color="{INDIGO}"/>
     </linearGradient>
-    <radialGradient id="glow" cx="80%" cy="20%" r="60%">
+    <radialGradient id="glow-hero" cx="80%" cy="20%" r="60%">
       <stop offset="0%" stop-color="{ACCENT}" stop-opacity="0.35"/>
       <stop offset="100%" stop-color="{ACCENT}" stop-opacity="0"/>
     </radialGradient>
   </defs>
-  <rect width="920" height="260" rx="16" fill="url(#bg)"/>
-  <rect width="920" height="260" rx="16" fill="url(#glow)"/>
-  <text x="60" y="110" font-family="JetBrains Mono, Consolas, monospace" font-size="52" font-weight="800" fill="{WHITE}">Abijith U</text>
-  <text x="62" y="145" font-family="JetBrains Mono, Consolas, monospace" font-size="18" fill="{LILAC}">Edge AI Engineer · Full-Stack Developer · IoT Builder</text>
-  <text x="62" y="180" font-family="JetBrains Mono, Consolas, monospace" font-size="14" fill="{SLATE}">CSE @ Chennai Institute of Technology · Class of 2028</text>
-  <g font-family="JetBrains Mono, Consolas, monospace" font-size="13" fill="{SLATE}">
+  <rect width="920" height="260" rx="16" fill="url(#bg-hero)"/>
+  <rect width="920" height="260" rx="16" fill="url(#glow-hero)"/>
+  <text x="60" y="110" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="52" font-weight="800" fill="{WHITE}">Abijith U</text>
+  <text x="62" y="145" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="18" fill="{LILAC}">Edge AI Engineer · Full-Stack Developer · IoT Builder</text>
+  <text x="62" y="180" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="{SLATE}">CSE @ Chennai Institute of Technology · Class of 2028</text>
+  <g font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="{SLATE}">
     <text x="62" y="215">Chennai, India</text>
     <text x="220" y="215">·</text>
     <text x="235" y="215">Available now</text>
@@ -159,13 +157,13 @@ with open(os.path.join(BASE, "hero-banner.svg"), "w", encoding="utf-8") as f:
 # 5. SKILL CARDS SVG
 def skill_card(x, title, items, level):
     lines = "".join(
-        f'<text x="{x+18}" y="{58+18*i}" font-family="JetBrains Mono, monospace" font-size="12" fill="{SLATE}">• {it}</text>'
+        f'<text x="{x+18}" y="{58+18*i}" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="12" fill="{SLATE}">• {it}</text>'
         for i, it in enumerate(items)
     )
     bar_w = int(200 * level / 100)
     return f'''
   <rect x="{x}" y="0" width="220" height="{58+18*len(items)+30}" rx="10" fill="{INDIGO_DARK}" stroke="{ACCENT}" stroke-opacity="0.4"/>
-  <text x="{x+18}" y="30" font-family="JetBrains Mono, monospace" font-size="15" font-weight="700" fill="{LILAC}">{title}</text>
+  <text x="{x+18}" y="30" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="15" font-weight="700" fill="{LILAC}">{title}</text>
   {lines}
   <rect x="{x+18}" y="{58+18*len(items)+8}" width="184" height="6" rx="3" fill="{NAVY}"/>
   <rect x="{x+18}" y="{58+18*len(items)+8}" width="{bar_w-16 if bar_w>16 else 4}" height="6" rx="3" fill="{ACCENT}"/>
@@ -186,4 +184,4 @@ skill_cards = f'''<svg width="920" height="{max_h}" viewBox="0 0 920 {max_h}" xm
 with open(os.path.join(BASE, "skill-cards.svg"), "w", encoding="utf-8") as f:
     f.write(skill_cards)
 
-print("Generated all SVG assets successfully!")
+print("Regenerated all SVGs with XML escaping & unique gradient IDs!")
