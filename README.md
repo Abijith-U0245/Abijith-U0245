@@ -201,8 +201,8 @@ A fully offline voice assistant running entirely on Raspberry Pi with zero inter
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=Abijith-U0245&show_icons=true&theme=transparent&hide_border=true&include_all_commits=true&count_private=true&title_color=A5B4FC&icon_color=818CF8&text_color=94A3B8&ring_color=818CF8" height="165"/>
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Abijith-U0245&layout=compact&theme=transparent&hide_border=true&title_color=A5B4FC&text_color=94A3B8&langs_count=7" height="165"/>
+<img src="https://github-readme-stats-fast.vercel.app/api?username=Abijith-U0245&show_icons=true&theme=transparent&hide_border=true&include_all_commits=true&count_private=true&title_color=A5B4FC&icon_color=818CF8&text_color=94A3B8&ring_color=818CF8" height="165"/>
+<img src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=Abijith-U0245&layout=compact&theme=transparent&hide_border=true&title_color=A5B4FC&text_color=94A3B8&langs_count=7" height="165"/>
 
 <br/>
 
