@@ -172,43 +172,42 @@ Edge AI · Full-stack systems · IoT · Applied ML
 
 <table width="100%">
 <tr>
-<td width="50%" valign="top">
+<td width="25%" valign="top">
 
 ### **GigEase**
-<sub>AI Parametric Insurance Platform</sub>
+<sub>AI Parametric Insurance</sub>
 
 Auto-detects floods and disruptions for gig delivery workers via live APIs, crediting UPI within 10 minutes — zero claim filing. 4-layer fraud detection with XGBoost + Prophet pricing.
 
-<sub>`FastAPI` `React` `XGBoost` `Kafka` `LangChain`</sub>  
+<sub>`FastAPI` `React` `XGBoost` `Kafka` `LangChain`</sub>
+
 <sub>**Top 10 / 5,000+ teams** — Guidewire DevTrails 2026</sub>
 
 </td>
-<td width="50%" valign="top">
+<td width="25%" valign="top">
 
 ### **SWASTHA**
-<sub>Water Quality Assessment System</sub>
+<sub>IoT Water Assessment</sub>
 
 ESP32-based IoT water monitoring with real-time sensing, cloud connectivity, and WHO-threshold alerts. React + MQTT + InfluxDB + Redis dashboard with 96.44% ML accuracy.
 
 <sub>`ESP32` `MQTT` `InfluxDB` `Redis` `FastAPI`</sub>
 
 </td>
-</tr>
-<tr>
-<td width="50%" valign="top">
+<td width="25%" valign="top">
 
 ### **CARES**
-<sub>RAG Document Intelligence</sub>
+<sub>RAG Document AI</sub>
 
 Context-aware Q&A over uploaded documents via a custom retrieval-augmented generation pipeline with FastAPI backend & Next.js frontend.
 
 <sub>`Next.js` `FastAPI` `Python` `RAG`</sub>
 
 </td>
-<td width="50%" valign="top">
+<td width="25%" valign="top">
 
 ### **ShruthiAI**
-<sub>Offline Hindi Voice Assistant</sub>
+<sub>Offline Hindi Voice AI</sub>
 
 Fully offline voice assistant running on Raspberry Pi with zero internet dependency. On-device STT (Vosk) and offline TTS (eSpeak NG) tuned for ARM.
 
@@ -260,23 +259,25 @@ Fully offline voice assistant running on Raspberry Pi with zero internet depende
 
 <table width="100%">
 <tr>
-<td width="100%">
+<td width="33%" valign="top">
 
-<img src="https://img.shields.io/badge/AWS-1E1B4B?style=flat-square&logo=amazonaws&logoColor=FF9900" height="26"/> &nbsp; **AWS Cloud Practitioner Essentials** &nbsp;·&nbsp; <sub>AWS Skill Builder</sub>
-
-</td>
-</tr>
-<tr>
-<td>
-
-<img src="https://img.shields.io/badge/MongoDB-1E1B4B?style=flat-square&logo=mongodb&logoColor=47A248" height="26"/> &nbsp; **MongoDB Skill Certifications** &nbsp;·&nbsp; <sub>MongoDB University</sub>
+<img src="https://img.shields.io/badge/AWS-1E1B4B?style=for-the-badge&logo=amazonaws&logoColor=FF9900" height="30"/><br/><br/>
+**AWS Cloud Practitioner Essentials**  
+<sub>AWS Skill Builder</sub>
 
 </td>
-</tr>
-<tr>
-<td>
+<td width="33%" valign="top">
 
-<img src="https://img.shields.io/badge/Cisco-1E1B4B?style=flat-square&logo=cisco&logoColor=1BA0D7" height="26"/> &nbsp; **CCNA: Introduction to Networks** &nbsp;·&nbsp; <sub>Cisco Networking Academy</sub>
+<img src="https://img.shields.io/badge/MongoDB-1E1B4B?style=for-the-badge&logo=mongodb&logoColor=47A248" height="30"/><br/><br/>
+**MongoDB Skill Certifications**  
+<sub>MongoDB University</sub>
+
+</td>
+<td width="33%" valign="top">
+
+<img src="https://img.shields.io/badge/Cisco-1E1B4B?style=for-the-badge&logo=cisco&logoColor=1BA0D7" height="30"/><br/><br/>
+**CCNA: Introduction to Networks**  
+<sub>Cisco Networking Academy</sub>
 
 </td>
 </tr>
